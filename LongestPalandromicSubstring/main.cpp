@@ -15,7 +15,7 @@ int main(){
     while(testcases--){
         string s;
         getline(cin, s);
-        cout<<s<<" "<<longestPalandromicString(s)<<endl;
+        cout<<s<<" --> "<<longestPalandromicString(s)<<endl;
     }
 }
 string longestPalandromicString(string A){
@@ -40,7 +40,7 @@ string longestPalandromicString(string A){
             start = left + 1;
         }
     }
-    cout<<start<<" "<<maxLength<<" ";
-    return A.substr(start, start + maxLength);
+    //cout<<start<<" "<<maxLength<<" ";
+    return A.substr(start, maxLength);
 }
 
